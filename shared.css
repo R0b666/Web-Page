@@ -1,0 +1,306 @@
+:root {
+  --dark-green: #0e4f1f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.backdrop {
+  display: none;
+  position: fixed;
+  opacity: 0;
+  transition: opacity 0.4s linear;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  position: fixed;
+  opacity: 0;
+  transform: translateY(-3rem);
+  transition: opacity 0.2s ease-out, transform 0.5s ease-out;
+  z-index: 200;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.modalTitle {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.modalActions {
+  text-align: center;
+}
+
+.modalAction {
+  border: 1px solid var(--dark-green);
+  background: var(--dark-green);
+  text-decoration: none;
+  color: white;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.modalAction:hover,
+.modalAction:active {
+  background: #2ddf5c;
+  border-color: #2ddf5c;
+}
+
+.modalActionNegative {
+  background: red;
+  border-color: red;
+}
+
+.modalActionNegative:hover,
+.modalActionNegative:active {
+  background: #ff5454;
+  border-color: #ff5454;
+}
+
+.mainHeader {
+  background-color: #d9efe9;
+  width: 100%;
+  padding: 8px 16px;
+  margin-top: 0px;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggleButton {
+  width: 46px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+
+.toggleButton:focus {
+  outline: none;
+}
+
+.toggleButtonBar {
+  width: 100%;
+  height: 0.2rem;
+  background: black;
+  display: block;
+  margin: 0.6rem 0;
+}
+
+.mainHeaderLogo {
+  color: var(--dark-green);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.mainHeaderLogo img {
+  height: 100%;
+  height: 2.5rem;
+  vertical-align: middle;
+}
+
+.mainNav {
+  display: inline-block;
+  text-align: right;
+  width: 88%;
+  vertical-align: middle;
+  display: none;
+}
+
+.mainNavItems {
+  display: flex;
+}
+
+.mainNavItem {
+  padding: 0px 16px;
+}
+
+.mainNavItem a,
+.mobileNavItem a {
+  text-decoration: none;
+  color: var(--dark-green);
+  font-weight: bold;
+  padding: 3px 0;
+}
+
+.mainNavItem a:hover,
+.mainNavItem a:active {
+  color: white;
+  border-bottom: 4px solid white;
+}
+
+.mainNavItemCTA {
+  animation: wiggle 0.4s 3s 8;
+}
+
+.mainNavItemCTA a,
+.mobileNavItemCTA a {
+  color: white;
+  background: #ae724a;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.mainNavItemCTA a:hover,
+.mainNavItemCTA a:active,
+.mobileNavItemCTA a:hover,
+.mobileNavItemCTA a:active {
+  color: #ae724a;
+  background: white;
+  border: none;
+}
+
+.mainFooter {
+  background: black;
+  color: white;
+  padding: 32px;
+  margin-top: 48px;
+}
+
+.mainFooterLinks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainFooterLink {
+  margin: 8px 16px;
+}
+
+.mainFooterLink a {
+  color: white;
+  text-decoration: none;
+}
+
+.mainFooterLink a:hover,
+.mainFooterLink a:active {
+  color: #ccc;
+}
+
+.mobileNav {
+  /* display: none; */
+  opacity: 1;
+  transform: translateX(-100%);
+  transition: opacity 0.2s ease-out, transform 0.6s ease-out;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 60%;
+  height: 100vh;
+}
+
+.mobileNavItems {
+  width: 90%;
+  height: 100%;
+  list-style: none;
+  margin: 0% auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobileNavItem {
+  margin: 1rem 0;
+}
+
+.mobileNavItem a {
+  font-size: 1.5rem;
+}
+.button {
+  background: var(--dark-green);
+  color: white;
+  font: inherit;
+  border: 2px solid var(--dark-green);
+  padding: 8px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  background: white;
+  color: var(--dark-green);
+}
+
+.button[disabled] {
+  cursor: not-allowed;
+  border: #a1a1a1;
+  background: #ccc;
+  color: #a1a1a1;
+}
+
+.open {
+  display: block !important;
+  opacity: 1 !important;
+  transform: translateY(0) translateX(0) !important;
+}
+
+@media (min-width: 40rem) {
+  .toggleButton {
+    display: none;
+  }
+
+  .mainNav {
+    display: flex;
+    justify-content: end;
+  }
+
+  .mainNavItems {
+    list-style-type: none;
+  }
+
+  .mainFooterLink {
+    margin: 0 16px;
+  }
+
+  .mainFooterLinks {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotateZ(0);
+  }
+
+  50% {
+    transform: rotateZ(-10deg);
+  }
+
+  100% {
+    transform: rotateZ(10deg);
+  }
+}

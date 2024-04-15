@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Udemy CSS</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../shared.css" />
+    <link rel="stylesheet" href="packages.css" />
+  </head>
+  <body>
+    <div class="backdrop"></div>
+    <div class="modal">
+      <h1 class="modalTitle">Do you want to continue?</h1>
+      <div class="modalActions">
+        <a href="../start-hosting/index.html" class="modalAction">Yes!</a>
+        <button class="modalAction modalActionNegative" type="button">
+          No!
+        </button>
+      </div>
+    </div>
+    <div class="background"></div>
+    <header class="mainHeader">
+      <div class="mainHeaderItem">
+        <button class="toggleButton">
+          <span class="toggleButtonBar"></span>
+          <span class="toggleButtonBar"></span>
+          <span class="toggleButtonBar"></span>
+        </button>
+        <a href="../index.html" class="mainHeaderLogo">
+          <img
+            src="../images/FProj.JPG"
+            alt="FProj - Your favorite hosting company"
+          />
+        </a>
+      </div>
+      <nav class="mainNav">
+        <ul class="mainNavItems">
+          <li class="mainNavItem">
+            <a href="index.html">Packages</a>
+          </li>
+          <li class="mainNavItem">
+            <a href="../customers/index.html">Customers</a>
+          </li>
+          <li class="mainNavItem mainNavItemCTA">
+            <a href="../start-hosting/index.html">Start Hosting</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <nav class="mobileNav">
+      <ul class="mobileNavItems">
+        <li class="mobileNavItem">
+          <a href="/packages/index.html">Packages</a>
+        </li>
+        <li class="mobileNavItem">
+          <a href="/customers/index.html">Customers</a>
+        </li>
+        <li class="mobileNavItem mobileNavItemCTA">
+          <a href="/start-hosting/index.html">Start Hosting</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section class="mainSectionItem" id="plus">
+        <a href="#">
+          <h1>Our PLUS Plan</h1>
+          <h2 class="itemBadge">RECOMMANDED</h2>
+          <h2>The most popular choice of our customers.</h2>
+          <p>
+            Benefit from increased storage and faster support to ensure that
+            your mission-critical data and applications are always available!
+          </p>
+        </a>
+      </section>
+      <section class="mainSectionItem" id="free">
+        <a href="#">
+          <h1>Our FREE Plan</h1>
+          <h2>An extremely solid start into our hosting world.</h2>
+          <p>Get started immediately at zero cost!</p>
+        </a>
+      </section>
+      <div class="clearfix"></div>
+      <section class="mainSectionItem" id="premium">
+        <a href="#">
+          <h1>Our PREMIUM Plan</h1>
+          <h2>
+            All your enterprise needs. Instant support, guaranteed uptime.
+          </h2>
+          <p>
+            The best solution for small to large enterprises. Because hosting
+            shouldn't be in the way!
+          </p>
+        </a>
+      </section>
+    </main>
+    <footer class="mainFooter">
+      <nav>
+        <ul class="mainFooterLinks">
+          <li class="mainFooterLink">
+            <a href="#">Support</a>
+          </li>
+          <li class="mainFooterLink">
+            <a href="#">Terms of Use</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="../shared.js"></script>
+  </body>
+</html>

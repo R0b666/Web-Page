@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Udemy CSS</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../shared.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="start-hosting.css" />
+  </head>
+  <body>
+    <div class="backdrop"></div>
+    <div class="modal">
+      <h1 class="modalTitle">Do you want to continue?</h1>
+      <div class="modalActions">
+        <a href="../start-hosting/index.html" class="modalAction">Yes!</a>
+        <button class="modalAction modalActionNegative" type="button">
+          No!
+        </button>
+      </div>
+    </div>
+    <header class="mainHeader">
+      <div class="mainHeaderItem">
+        <button class="toggleButton">
+          <span class="toggleButtonBar"></span>
+          <span class="toggleButtonBar"></span>
+          <span class="toggleButtonBar"></span>
+        </button>
+        <a href="../index.html" class="mainHeaderLogo">
+          <img
+            src="../images/FProj.JPG"
+            alt="FProj - Your favorite hosting company"
+          />
+        </a>
+      </div>
+      <nav class="mainNav">
+        <ul class="mainNavItems">
+          <li class="mainNavItem">
+            <a href="../packages/index.html">Packages</a>
+          </li>
+          <li class="mainNavItem">
+            <a href="../customers/index.html">Customers</a>
+          </li>
+          <li class="mainNavItem mainNavItemCTA">
+            <a href="index.html">Start Hosting</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <nav class="mobileNav">
+      <ul class="mobileNavItems">
+        <li class="mobileNavItem">
+          <a href="/packages/index.html">Packages</a>
+        </li>
+        <li class="mobileNavItem">
+          <a href="/customers/index.html">Customers</a>
+        </li>
+        <li class="mobileNavItem mobileNavItemCTA">
+          <a href="/start-hosting/index.html">Start Hosting</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="signup-page">
+      <h1 class="signup-title">Awesome! Let's dive right in!</h1>
+      <form action="index.html" class="signup-form">
+        <label for="title">Title</label>
+        <select id="title">
+          <option value="mr">Mr.</option>
+          <option value="ms">Ms.</option>
+        </select>
+        <label for="first-name">First name</label>
+        <input type="text" id="first-name" />
+        <label for="last-name">Last name</label>
+        <input type="text" id="last-name" />
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" />
+        <label for="password">Password</label>
+        <input type="password" id="password" />
+        <div class="signup-form__checkbox">
+          <input type="checkbox" id="agree-terms" />
+          <label for="agree-terms"
+            >Agree to
+            <a href="#">Terms &amp; Conditions</a>
+          </label>
+        </div>
+        <button type="submit" class="button">Sign Up</button>
+      </form>
+    </main>
+    <footer class="mainFooter">
+      <nav>
+        <ul class="mainFooterLinks">
+          <li class="mainFooterLink">
+            <a href="#">Support</a>
+          </li>
+          <li class="mainFooterLink">
+            <a href="#">Terms of Use</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="../shared.js"></script>
+  </body>
+</html>

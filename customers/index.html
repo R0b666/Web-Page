@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Udemy CSS</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./customers.css" />
+    <link rel="stylesheet" href="../shared.css" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="backdrop"></div>
+    <header class="mainHeader">
+      <div class="mainHeaderItem">
+        <button class="toggleButton">
+          <span class="toggleButtonBar"></span>
+          <span class="toggleButtonBar"></span>
+          <span class="toggleButtonBar"></span>
+        </button>
+        <a href="../index.html" class="mainHeaderLogo">
+          <img
+            src="../images/FProj.JPG"
+            alt="FProj - Your favorite hosting company"
+          />
+        </a>
+      </div>
+      <nav class="mainNav">
+        <ul class="mainNavItems">
+          <li class="mainNavItem">
+            <a href="../packages/index.html">Packages</a>
+          </li>
+          <li class="mainNavItem">
+            <a href="index.html">Customers</a>
+          </li>
+          <li class="mainNavItem mainNavItemCTA">
+            <a href="../start-hosting/index.html">Start Hosting</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <nav class="mobileNav">
+      <ul class="mobileNavItems">
+        <li class="mobileNavItem">
+          <a href="/packages/index.html">Packages</a>
+        </li>
+        <li class="mobileNavItem">
+          <a href="/customers/index.html">Customers</a>
+        </li>
+        <li class="mobileNavItem mobileNavItemCTA">
+          <a href="/start-hosting/index.html">Start Hosting</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div>
+        <div class="testimonial" id="customer1">
+          <div class="testimonialImageContainer">
+            <img
+              src="../images/customer1.jpg"
+              alt="Mike Statham - Customer"
+              class="testimonialImage"
+            />
+          </div>
+          <div class="testimonialInfo">
+            <h1 class="testimonialName">Mike Statham</h1>
+            <h2 class="testimonialSubtitle">
+              Founder of
+              <a href="tech-analysis.com">tech-analysis.com</a>
+            </h2>
+            <p class="testimonialText">
+              FProj helped me realize my project with a highly constrained
+              budget in like no time.
+            </p>
+          </div>
+        </div>
+        <div class="testimonial" id="customer2">
+          <div class="testimonialInfo">
+            <h1 class="testimonialName">John Mellow</h1>
+            <h2 class="testimonialSubtitle">
+              Hosts his private videos on FProj.
+            </h2>
+            <p class="testimonialText">
+              I worked as a blogger and always looked for an integrated hosting
+              and file storage solution. I found it in FProj!
+            </p>
+          </div>
+          <div class="testimonialImageContainer">
+            <img
+              src="../images/customer2.jpg"
+              alt="John Mellow - Customer"
+              class="testimonialImage"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="mainFooter">
+      <nav>
+        <ul class="mainFooterLinks">
+          <li class="mainFooterLink">
+            <a href="#">Support</a>
+          </li>
+          <li class="mainFooterLink">
+            <a href="#">Terms of Use</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="../shared.js"></script>
+  </body>
+</html>
